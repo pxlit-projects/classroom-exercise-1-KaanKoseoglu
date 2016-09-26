@@ -6,16 +6,16 @@ class Barista {
     private final String name;
     private WorkEthic workEthic;
 
-    Barista(String name) {
+    Barista(String name, WorkEthic workEthic ) {
         this.name = name;
         if (Objects.equals(name, "vicky")) {
-            workEthic = new CustomerFriendlyWorkEthic();
+            this.workEthic = workEthic;
         } else if (Objects.equals(name, "gemma")) {
-            workEthic = new LazyWorkEthic();
+        	this.workEthic = workEthic;
         } else if (Objects.equals(name, "gianluca")) {
-            workEthic = new BadHearingWorkEthic();
+        	this.workEthic = workEthic;
         } else {
-            workEthic = new LazyWorkEthic();
+            this.workEthic = new LazyWorkEthic();
         }
     }
 

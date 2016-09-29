@@ -8,7 +8,6 @@ import java.util.concurrent.ThreadLocalRandom;
 public class MoonDollahsCoffeeShop {
 
     private List<Barista> baristas = new ArrayList<>();
-
     MoonDollahsCoffeeShop() {
         Barista vicky = new Barista("vicky",new LazyWorkEthic());
         Barista emma = new Barista("gemma",new CustomerFriendlyWorkEthic());

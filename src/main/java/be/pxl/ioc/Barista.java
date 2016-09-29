@@ -7,16 +7,10 @@ class Barista {
     private WorkEthic workEthic;
 
     Barista(String name, WorkEthic workEthic ) {
+    	
         this.name = name;
-        if (Objects.equals(name, "vicky")) {
-            this.workEthic = workEthic;
-        } else if (Objects.equals(name, "gemma")) {
-        	this.workEthic = workEthic;
-        } else if (Objects.equals(name, "gianluca")) {
-        	this.workEthic = workEthic;
-        } else {
-            this.workEthic = new LazyWorkEthic();
-        }
+        this.workEthic = workEthic;
+        
     }
 
     String getName() {
